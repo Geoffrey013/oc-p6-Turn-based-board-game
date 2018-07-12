@@ -1,0 +1,95 @@
+@font-face {
+	font-family: "Headliner45";
+	src: url("../../fonts/Headliner45.ttf");
+}
+
+html {
+  height: 100%;
+  body {
+    height: 100%;
+    font-weight: 400;
+    font-family: 'Teko';
+
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  letter-spacing: 1.5px;
+  font-family: 'Headliner45';
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 34px
+}
+
+section {
+  padding-bottom: 120px;
+}
+
+a {
+  text-decoration: none;
+  color: @black;
+  font-size: 17px;
+  line-height: 27px;
+  &:hover {
+    text-decoration: none;
+    color: @blue;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+[class*=' input'], .form-control {
+  border-radius: 0;
+}
+
+.table {
+  margin: 0;
+}
+
+input {
+  background-color: @white;
+  &:active {
+    border: none;
+  }
+}
+
+p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+em {
+  font-weight: 700;
+}
+
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+hr {
+  margin: 0;
+}
+
+.container {
+  max-width: 1340px;
+}
+
+img {
+  width: 100%;
+  vertical-align: inherit;
+}
+
+.clear {
+  clear: both;
+}

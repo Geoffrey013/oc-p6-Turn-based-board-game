@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jeu de rôle</title>
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+    <div id="main-container">
+        <div id="blur">
+
+            <header>
+                <figure>
+                    <img src="img/logo.png" alt="">
+                </figure>
+            </header>
+
+            <div id="content" class="container-fluid">
+
+                <div id="start_game_container" class="row">
+
+                    <div class="col-xs-6">
+                        <button id="start_button" class="button">Nouvelle partie</button>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <button id="help_button" class="button">Règles du jeu</button>
+                    </div>
+                </div>
+
+                <div id="fight_buttons_container">
+                    <button id="attack_button" class="button">Attaquer</button>
+                    <button id="defense_button" class="button">Défendre</button>
+                </div>
+
+                <div class="row">
+
+                    <div id="character_sheet" class="col-md-3">
+                        <div id="player1" class="player">
+                            <h3>Joueur 1</h3>
+                            <figure>
+                                <img src="img/player1.jpg" alt="">
+                                <figcaption>
+                                    <p><span id="player1_hp"></span> PV</p>
+                                    <p>Arme: <span id="player1_weapon"></span></p>
+                                    <p>Dégâts: <span id="player1_damage"></span></p>
+                                </figcaption>
+                                <div class="clear"></div>
+                            </figure>
+                        </div>
+
+                        <div id="player2" class="player">
+                            <h3>Joueur 2</h3>
+                            <figure>
+                                <img src="img/player2.jpg" alt="">
+                                <figcaption>
+                                    <p><span id="player2_hp"></span> PV</p>
+                                    <p>Arme: <span id="player2_weapon"></span></p>
+                                    <p>Dégâts: <span id="player2_damage"></span></p>
+                                </figcaption>
+                                <div class="clear"></div>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div id="board_game" class="col-md-6">
+                        <div id="rules">
+                            <h2>Règles du jeu</h2>
+
+                            <p>Sur la carte, un nombre limité d’armes ainsi que des obstacles seront placés aléatoirement.
+                            </p>
+
+                            <p>A chaque tour, un joueur peut se déplacer d’une à trois cases (horizontalement ou verticalement) avant de terminer son tour. Il ne peut évidemment pas passer à travers un obstacle.
+                            </p>
+
+                            <p>Si un joueur passe sur une case contenant une arme, il laisse son arme actuelle sur place et la remplace par la nouvelle.
+                            </p>
+
+                            <p>Si les joueurs se croisent sur des cases adjacentes (horizontalement ou verticalement), un combat à mort s’engage.
+                            </p>
+
+                            <ul>Lors d'un combat, le fonctionnement du jeu est le suivant :
+
+                                <li>Chacun attaque à son tour</li>
+
+                                <li>Les dégâts infligés dépendent de l’arme possédée par le joueur</li>
+
+                                <li>Le joueur peut choisir d’attaquer ou de se défendre contre le prochain coup</li>
+
+                                <li>Lorsque le joueur se défend, il encaisse 50% de dégâts en moins qu’en temps normal</li>
+
+                                <li>Dès que les points de vie d’un joueur (initialement à 100) tombent à 0 , celui-ci a perdu.</li>
+
+                            </ul>
+
+                        </div>
+                        <div id="victory"></div>
+                    </div>
+
+                    <div id="logger_wrapper" class="col-md-3">
+                        <div id="logger-content">
+                            <h2>Déroulement</h2>
+                            <ul id="logger-list-events"></ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vendor/jquery.js" charset="utf-8"></script>
+
+    <script type="text/javascript" src="js/model/player.js"></script>
+    <script type="text/javascript" src="js/model/weapon.js"></script>
+    <script type="text/javascript" src="js/model/barrier.js"></script>
+    <script type="text/javascript" src="js/model/cell.js"></script>
+
+    <script type="text/javascript" src="js/helper/adjacent-cells-detector.js"></script>
+
+    <script type="text/javascript" src="js/manager/game-effects-manager.js"></script>
+    <script type="text/javascript" src="js/manager/board-manager.js"></script>
+    <script type="text/javascript" src="js/manager/players-manager.js"></script>
+    <script type="text/javascript" src="js/manager/journal-manager.js"></script>
+
+    <script type="text/javascript" src="js/responsive/responsive.js"></script>
+
+    <script type="text/javascript" src="js/game-engine.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

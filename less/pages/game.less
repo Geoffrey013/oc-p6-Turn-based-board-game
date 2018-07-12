@@ -1,0 +1,132 @@
+#main-container {
+  background: url("../../img/wallpaper2.jpg") no-repeat;
+  background-size: cover;
+
+  #blur {
+    height: 100%;
+    background: rgba(0,0,0,0.7) no-repeat;
+    background-size: cover;
+  }
+
+  #content {
+    padding-top: 30px;
+    text-align: center;
+
+    #start_game_container{
+      padding-bottom: 30px;
+    }
+
+    #fight_buttons_container {
+      display: none;
+    }
+
+    #character_sheet {
+      padding-top: 30px;
+      figure {
+        img {
+          width: 40%;
+          float: left;
+          padding: 10px 0 10px 10px;
+        }
+        figcaption {
+          float: left;
+          margin-left: 20px;
+          margin-top: 10px;
+        }
+      }
+      p {
+        font-size: 20px;
+        color: #fff;
+        line-height: 40px;
+      }
+
+      h3 {
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        background: rgba(0,0,0,0.9);
+        color: #ffffff;
+        font-size: 26px;
+      }
+      .player {
+        width: 70%;
+        margin: 0 auto 50px;
+        text-align: left;
+        border: 2px solid #000;
+      }
+    }
+
+    #rules {
+      height: 100%;
+      width: 100%;
+      padding-top: 50px;
+      display: none;
+      position: absolute;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.8) no-repeat;
+      color: @white;
+    }
+
+    #victory {
+      height: 100%;
+      width: 100%;
+      padding-top: 200px;
+      display: none;
+      position: absolute;
+      z-index: 1000;
+      background: rgba(0, 0, 0, 0.8) no-repeat;
+      color: @white;
+    }
+
+    #board_game {
+      position: relative;
+      padding: 0;
+      background: url("../../img/map.png") no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: 15px solid #fff;
+        h2 {
+          margin-bottom: 40px;
+        }
+        p {
+          font-size: 16px;
+        }
+        ul {
+          margin-top: 30px;
+          font-size: 16px;
+        }
+    }
+
+    #logger_wrapper {
+      padding-top: 30px;
+      #logger-content {
+        width: 70%;
+        margin: 0 auto;
+        background: url("../../img/lettre.jpg") no-repeat;
+        background-size: cover;
+        h2 {
+          width: 100%;
+          padding: 10px 5px;
+          background: rgba(0, 0, 0, 0.9);
+          color: #ffffff;
+        }
+        #logger-list-events {
+          height: 300px;
+          overflow-y: auto;
+          padding: 20px 0;
+          li {
+            font-size: 20px;
+          }
+          hr{
+            width: 20%;
+            margin: 20px auto;
+            border-top: 2px solid black;
+          }
+        }
+      }
+    }
+  }
+}
