@@ -6,8 +6,8 @@
 - Player can move up to three cells MAX if it's not a blocked path 
 - A player must pick up a weapon if he walks on it (differents weapons spawns)
 - Player can attack other player if he is next to him:
-	Deathmatch on, fight continue until one player's PV drop to 0
-	A player can choose to "defend" next turn and take half of the damages
+	* Deathmatch on, fight continue until one player's PV drop to 0
+	* A player can choose to "defend" next turn and take half of the damages
 
 - If a player die, a victory message with the name of the winner appears
 
