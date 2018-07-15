@@ -1,4 +1,7 @@
 # Turn based board game
+
+[![Boardgame](docs/screenshots/Boardgame.jpg)](docs/screenshots/Boardgame.jpg)
+
 6th OpenClassroom project, the point is to practice POO and jQuery by creating a turn-based game with 2 players.
 
 # Directives
